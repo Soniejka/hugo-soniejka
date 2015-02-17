@@ -4,6 +4,8 @@
 {{ partial "sidebar.html" . }}
 
     <div class="content container">
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+
 <div class="posts">
 
       {{ range where .Data.Pages "Section" "post" }}
@@ -13,7 +15,7 @@
         {{ .Title }}
       </a>
     </h1>
-    <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+    <span class="post-date">{{ .Date.Format "2.01.2006" }}</span>
 
     {{ .Content }}
 

@@ -1,6 +1,10 @@
 baseurl = "http://yourSiteHere"
-languageCode = "en-us"
+languageCode = "ru"
 title = "Сонейка"
 
-[Params]
-    Description = "Наука, история, творчество. Блог для людей с широким кругозором"
+[params]
+    description = "Наука, история, творчество. Блог для людей с широким кругозором"
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
