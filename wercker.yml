@@ -6,6 +6,6 @@ build:
 deploy:
   steps:
     - lukevivier/gh-pages@0.2.1:
-        token: 1987d94731789b68f85db1c20a95b6d29f0274ff
+        token: $GIT_TOKEN
         domain: hugo-wercker.ig.nore.me
         basedir: public
