@@ -27,3 +27,18 @@
     -ms-transform: scale(1.01,1.01);
 
 }
+
+@media (min-width: 72rem) {
+  .content {
+    max-width: 46rem;
+    margin-left: 28rem;
+    margin-right: 6rem;
+  }
+}
+
+@media (min-width: 94rem) {
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
