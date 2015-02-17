@@ -1,0 +1,30 @@
+{{ partial "head.html" . }}
+<body class="theme-base-08">
+
+{{ partial "sidebar.html" . }}
+
+    <div class="content container">
+<div class="posts">
+
+      {{ range where .Data.Pages "Section" "post" }}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+    </h1>
+    <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+
+    {{ .Content }}
+
+    <a href="{{ .Permalink }}#disqus_thread">Комментировать</a>
+  </div>
+  {{ end }}
+</div>
+</div>
+
+
+{{ partial "disqus_counter.html" . }}
+
+  </body>
+</html>

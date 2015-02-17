@@ -1,0 +1,6 @@
+baseurl = "http://yourSiteHere"
+languageCode = "en-us"
+title = "Сонейка"
+
+[Params]
+    Description = "Наука, история, творчество. Блог для людей с широким кругозором"
