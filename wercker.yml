@@ -1,1 +1,3 @@
 box: wercker/default
+steps:
+  - arjen/hugo-build@1.0.2
