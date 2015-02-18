@@ -3,7 +3,7 @@
 
 {{ partial "sidebar.html" . }}
 
-    <div class="content container">
+<div class="content container">
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
 
 <div class="posts">
@@ -11,7 +11,7 @@
       {{ range where .Data.Pages "Section" "post" }}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ .Permalink }}">
+      <a href="{{ .RelPermalink }}">
         {{ .Title }}
       </a>
     </h1>
@@ -19,10 +19,12 @@
 
     {{ .Content }}
 
-    <a href="{{ .Permalink }}#disqus_thread">Комментировать</a>
+    <a href="{{ .RelPermalink }}#disqus_thread">Комментировать</a>
   </div>
   {{ end }}
 </div>
+
+
 </div>
 
 

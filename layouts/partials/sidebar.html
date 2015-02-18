@@ -11,9 +11,9 @@
     </div>
 
     <ul class="sidebar-nav">
-      <li><a href="/">Блог</a> </li>
+      <li><a class="sidebar-nav-item" href="/">Блог</a> </li>
       {{ range .Site.Menus.main }}
-        <li><a href="{{.Url}}"> {{ .Name }} </a></li>
+        <li><a class="sidebar-nav-item" href="{{.Url}}"> {{ .Name }} </a></li>
       {{end}}
     </ul>
 

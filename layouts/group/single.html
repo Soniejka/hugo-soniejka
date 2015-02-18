@@ -5,20 +5,22 @@
 
     <div class="content container">
 <div class="post">
-  <h1>{{ .Title }}</h1>
+  <h1 class="post-title">{{ .Title }}</h1>
       {{ .Content }}
 
 
+    <ul class="posts">
       {{$descr := .Params.category}}
       {{ range .Site.Pages }}
       {{ if in .Params.categories $descr }}
 
       <li>
-        <span><a href="{{ .Permalink }}">{{ .Title }}</a> &#8211; {{ .Description }}</span>
+        <span><a href="{{ .RelPermalink }}">{{ .Title }}</a> &#8211; {{ .Description }}</span>
       </li>
 
       {{ end }}
       {{ end }}
+    </ul>
 
 </div>
 </div>
