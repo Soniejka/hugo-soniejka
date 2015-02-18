@@ -4,6 +4,7 @@ title = "Сонейка"
 
 [params]
     description = "Наука, история, творчество. Блог для людей с широким кругозором"
+    theme = "theme-base-08"
 
 [taxonomies]
     tag = "tags"

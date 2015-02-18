@@ -12,13 +12,15 @@
 
     <ul class="sidebar-nav">
       <li><a href="/">Блог</a> </li>
-      <li><a href="/categories/library/">Библиотека</a> </li>
       {{ range .Site.Menus.main }}
         <li><a href="{{.Url}}"> {{ .Name }} </a></li>
       {{end}}
     </ul>
 
-    <!-- {{ partial "widgets.html" . }} -->
+    <div class="social">
+        <span>ВКонтакте</span>{{ partial "vk_subscribe.html" . }}
+    </div>
+
 
   </div>
 
@@ -28,3 +30,5 @@
   </div>
 
 </div>
+
+{{ partial "analytics.html" . }}

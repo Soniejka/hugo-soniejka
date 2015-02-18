@@ -1,5 +1,5 @@
 {{ partial "head.html" . }}
-<body class="theme-base-08">
+<body{{ with .Site.Params.theme }} class="{{ . }}"{{ end }}>
 
 {{ partial "sidebar.html" . }}
 

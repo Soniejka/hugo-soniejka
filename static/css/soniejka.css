@@ -1,3 +1,9 @@
+body {
+    background: url("/images/bg.png") repeat 0 0;
+    background-color: #DFDFDF;
+}
+
+
 .logo {
     display: block;
     width: 100px;
@@ -28,8 +34,19 @@
 
 }
 
+.content {
+    background-color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
 @media (min-width: 72rem) {
   .content {
+      background-color: #fff;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
     max-width: 44rem;
     margin-left: 28rem;
     margin-right: 6rem;
@@ -46,4 +63,13 @@
 .lead {
   font-size: 0.8rem;
   font-weight: 300;
+}
+
+.social {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.social span {
+    color: #ac4142;
 }
