@@ -50,21 +50,6 @@ body {
     padding-top: 1rem;
 }
 
-/*@media (min-width: 72rem) {
-  .content {
-    max-width: 44rem;
-    margin-left: 28rem;
-    margin-right: 6rem;
-  }
-}
-
-@media (min-width: 94rem) {
-  .content {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}*/
-
 .lead {
   font-size: 0.8rem;
   font-weight: 300;
@@ -86,4 +71,22 @@ body {
 .posts-all-link {
     text-align: right;
     font-size: 1.2rem;
+}
+
+.sharing{
+  margin: 1rem;
+}
+
+.sharing-title {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.sharing a {
+  color: rgba(255,255,255,.5);
+}
+
+.sharing a:hover {
+  text-decoration: none;
+  color: rgba(255,255,255,.7);
 }

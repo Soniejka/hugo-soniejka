@@ -18,7 +18,7 @@
     </ul>
 
     <div class="social">
-        <span>ВКонтакте</span>{{ partial "vk_subscribe.html" . }}
+        <span>Группа ВКонтакте</span>{{ partial "vk_subscribe.html" . }}
     </div>
 
 
@@ -26,6 +26,7 @@
 
   <!-- bottom -->
   <div class="container sidebar-sticky">
+    {{ partial "sharing.html" . }}
       <p>{{ with .Site.Params.Copyright }}{{.}}{{ else }}&copy; {{.Now.Format "2006"}}. All rights reserved. {{end}}</p>
   </div>
 
