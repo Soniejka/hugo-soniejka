@@ -1,5 +1,7 @@
 +++
 menu = "main"
 description = ""
-category = ""
+category = "article"
 +++
+
+А здесь статьи

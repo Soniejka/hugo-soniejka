@@ -2,10 +2,12 @@ baseurl = "http://soniejka.github.io"
 languageCode = "ru"
 title = "Сонейка"
 
-[params]
-    description = "Наука, история, творчество. Блог для людей с широким кругозором"
-    theme = "theme-soniejka"
 
 [taxonomies]
     tag = "tags"
     category = "categories"
+
+[params]
+    description = "Наука, история, творчество. Блог для людей с широким кругозором"
+    theme = "theme-soniejka"
+    dateFormat = "2006-01-02 15:04:05"
