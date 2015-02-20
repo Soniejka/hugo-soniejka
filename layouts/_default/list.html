@@ -4,15 +4,23 @@
 {{ partial "sidebar.html" . }}
 
   <div class="content container">
-    <ul class="posts">
+      <h1>{{ .Title }}</h1>
+    <div class="posts">
         {{ range .Data.Pages }}
-        <li>
+        <!-- <li>
           <span><a href="{{ .RelPermalink }}">{{ .Title }}</a> <time class="right moment">{{ .Date.Format .Site.Params.dateFormat}}</time></span>
-        </li>
+        </li> -->
+        <p class="post-in-list">
+          <span class="post-title post-list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a> </span>
+          <span class="right moment">{{ .Date.Format .Site.Params.dateFormat}}</span>
+          <br/>
+          <span class="post-description">{{ .Description }}</span>
+        </p>
+
         {{ end }}
-    </ul>
+    </div>
   </div>
 
-  {{ partial "moment.html" . }}
+  {{ partial "moment_short.html" . }}
 </body>
 </html>

@@ -90,3 +90,21 @@ body {
   text-decoration: none;
   color: rgba(255,255,255,.7);
 }
+
+.post > .fa-comment {
+    color: rgba(0,0,0,.2);
+}
+
+.post-in-list > .post-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.post-in-list > .post-description {
+    font-size: 0.8rem;
+}
+
+.post-in-list > .moment {
+    font-size: 0.9rem;
+    color: rgba(0,0,0,.5);
+}

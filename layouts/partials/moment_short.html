@@ -1,0 +1,8 @@
+<script src="/js/moment-with-locales.min.js"></script>
+<script>
+    var dates = document.getElementsByClassName("moment");
+    var i = dates.length;
+    while(i--) {
+        dates[i].innerHTML = moment(dates[i].innerHTML, "YYYY-MM-DD HH:mm:ss", "ru").format("ll");
+    }
+</script>

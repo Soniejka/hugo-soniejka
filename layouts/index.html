@@ -11,7 +11,7 @@
   <div class="post">
     <h1 class="post-title">
       <a href="{{ .RelPermalink }}">
-        {{ .Title }}
+          {{ .Title }}
       </a>
     </h1>
     <span class="post-date moment">{{ .Date.Format .Site.Params.dateFormat}}</span>
@@ -19,7 +19,7 @@
 
     {{ .Content }}
 
-    <a href="{{ .RelPermalink }}#disqus_thread">Комментировать</a>
+    <i class="fa fa-comment"></i>  <a href="{{ .RelPermalink }}#disqus_thread">Комментировать</a>
   </div>
   {{ end }}
 </div>
