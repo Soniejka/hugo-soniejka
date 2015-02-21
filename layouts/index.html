@@ -17,14 +17,24 @@
     <span class="post-date moment">{{ .Date.Format .Site.Params.dateFormat}}</span>
 
 
-    {{ .Content }}
+
+    {{ if .Params.cut }}
+      {{ .Summary }}
+    <div class="more-link">
+      <a href="{{ .RelPermalink }}">Читать дальше →</a>
+    </div>
+    <br />
+    {{ else }}
+      {{ .Content }}
+    {{ end }}
 
     <i class="fa fa-comment"></i>  <a href="{{ .RelPermalink }}#disqus_thread">Комментировать</a>
   </div>
+
   {{ end }}
 </div>
 
-<footer class="posts-all-link"><a href="/post/">Все посты →</a></footer>
+<footer class="posts-all-link"><a href="/group/blog">Все посты →</a></footer>
 
 </div>
 
@@ -32,6 +42,7 @@
 {{ partial "disqus_counter.html" . }}
 
 {{ partial "moment.html" . }}
+
 
   </body>
 </html>

@@ -11,7 +11,10 @@
     </div>
 
     <ul class="sidebar-nav">
-      <li><a class="sidebar-nav-item" href="/post/">Блог</a> </li>
+      <li><a class="sidebar-nav-item" href="/group/blog">Блог</a> </li>
+      <li><a class="sidebar-nav-item" href="/group/library">Библиотека</a> </li>
+      <li><a class="sidebar-nav-item" href="/group/articles">Статьи</a> </li>
+      <li><a class="sidebar-nav-item" href="/page/about">О сайте</a> </li>
       {{ range .Site.Menus.main }}
         <li><a class="sidebar-nav-item" href="{{.Url}}"> {{ .Name }} </a></li>
       {{end}}

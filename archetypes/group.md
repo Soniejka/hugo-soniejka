@@ -1,7 +1,4 @@
 +++
-menu = "main"
 description = ""
-category = "article"
+category = ""
 +++
-
-А здесь статьи

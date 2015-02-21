@@ -102,9 +102,13 @@ body {
 
 .post-in-list > .post-description {
     font-size: 0.8rem;
-}
-
-.post-in-list > .moment {
-    font-size: 0.9rem;
     color: rgba(0,0,0,.5);
 }
+
+.gray {
+    color: rgba(0,0,0,.5);
+}
+
+/*.post > .more-link {
+  display: none;
+}*/

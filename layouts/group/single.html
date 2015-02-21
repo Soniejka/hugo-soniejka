@@ -15,7 +15,7 @@
       {{ if in .Params.categories $descr }}
 
       <li>
-        <span><a href="{{ .RelPermalink }}">{{ .Title }}</a> &#8211; {{ .Description }}</span>
+        <span><span class="right moment gray">   {{ .Date.Format .Site.Params.dateFormat}}</span><a href="{{ .RelPermalink }}">{{ .Title }}</a> &#8211; {{ .Description }}</span>
       </li>
 
       {{ end }}
@@ -25,7 +25,7 @@
 </div>
 </div>
 
-
+{{ partial "moment_short.html" . }}
 {{ partial "disqus.html" . }}
 
 

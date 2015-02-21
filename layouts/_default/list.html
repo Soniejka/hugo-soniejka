@@ -7,9 +7,6 @@
       <h1>{{ .Title }}</h1>
     <div class="posts">
         {{ range .Data.Pages }}
-        <!-- <li>
-          <span><a href="{{ .RelPermalink }}">{{ .Title }}</a> <time class="right moment">{{ .Date.Format .Site.Params.dateFormat}}</time></span>
-        </li> -->
         <p class="post-in-list">
           <span class="post-title post-list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a> </span>
           <span class="right moment">{{ .Date.Format .Site.Params.dateFormat}}</span>

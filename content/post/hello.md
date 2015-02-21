@@ -2,7 +2,9 @@
 date = "2015-02-17T10:44:07+03:00"
 draft = false
 title = "Привет!"
-tags = ["test"]
+categories = ["blog"]
+description = "Добро пожаловать на новый сайт"
+cut = false
 +++
 
 Добро пожаловать!  

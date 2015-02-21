@@ -1,4 +1,6 @@
 +++
-categories = ["article", "library"]
+categories = ["blog", "library", "article"]
 description = ""
+draft = false
+cut = false
 +++
