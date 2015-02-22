@@ -1,7 +1,7 @@
-baseurl = "http://soniejka.github.io"
+baseurl = "http://soniejka.com"
 languageCode = "ru"
 title = "Сонейка"
-
+canonifyurls = true
 
 [taxonomies]
     tag = "tags"
